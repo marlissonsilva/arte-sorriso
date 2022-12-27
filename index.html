@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="./css/mobile.css"> <!-- Mobile First  -->
     <link rel="stylesheet" href="./css/desktop.css">
     <script src="https://kit.fontawesome.com/58e666dbc4.js" crossorigin="anonymous"></script>
-
+    <script src="./js/script.js" defer></script>
+    <script src="./js/modal.js" defer></script>
 </head>
 
 <body>
     <header id="header">
-        <a href="" id="logo"> <img src="./assets/logo.png" alt=""> <span id="name_logo">Arte&sorriso</span></a>
         <nav class="nav">
+            <a href="" id="logo"> <img src="./assets/logo.png" alt=""> <span id="name_logo">Arte&sorriso</span></a>
             <div id="menu_hamburguer">
                 <div class="one"></div>
                 <div class="two"></div>
@@ -25,13 +26,10 @@
             <ul class="menu">
                 <li id="li"><a href="#header">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#specialties">Produtos</a></li>
+                <li><a href="#specialties">Especialidades</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
-
-    </header>
-    <main>
         <div class="bg_dark">
             <section id="banner">
                 <div class="intro_banner">
@@ -47,7 +45,9 @@
                 </div>
             </section>
         </div>
+    </header>
 
+    <main>
         <section id="about">
             <div class="container">
                 <h1 class="sections_title" data-anime="show">Quem somos</h1>
@@ -72,7 +72,7 @@
         <section id="specialties">
             <h1 class="sections_title" data-anime="show">Nossas especialidades</h1>
             <div class="container">
-                <div class="card" data-anime="bottom">
+                <div class="card" data-anime="bottom" data-index="0">
                     <div class="content">
                         <img src="./assets/young-female-patient-visiting-dentist-office.jpg" alt="">
                         <div class="card_subtitle">
@@ -80,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-anime="bottom">
+                <div class="card" data-anime="bottom" data-index="1">
                     <div class="content">
                         <img src="./assets/young-female-patient-visiting-dentist-office.jpg" alt="">
                         <div class="card_subtitle">
@@ -88,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-anime="bottom">
+                <div class="card" data-anime="bottom" data-index="2">
                     <div class="content">
                         <img src="./assets/young-female-patient-visiting-dentist-office.jpg" alt="">
                         <div class="card_subtitle">
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-anime="bottom">
+                <div class="card" data-anime="bottom" data-index="3">
                     <div class="content">
                         <img src="./assets/young-female-patient-visiting-dentist-office.jpg" alt="">
                         <div class="card_subtitle">
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-anime="bottom">
+                <div class="card" data-anime="bottom" data-index="4">
                     <div class="content">
                         <img src="./assets/young-female-patient-visiting-dentist-office.jpg" alt="">
                         <div class="card_subtitle">
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" data-anime="bottom">
+                <div class="card" data-anime="bottom" data-index="5">
                     <div class="content">
                         <img src="./assets/young-female-patient-visiting-dentist-office.jpg" alt="">
                         <div class="card_subtitle">
@@ -122,6 +122,33 @@
                 </div>
 
             </div>
+
+            <!-- ########### MODAL ####### -->
+            <div id="fade" class="active"></div>
+            <div id="modal" class="active">
+                <div class="modal-content">
+                    <button class="close-button">Fechar<i class="bi bi-x-octagon"></i></button>
+                    <div class="modal-body">
+                        <div class="img-container">
+                            <img src="" id="img-person" alt="">
+                        </div>
+                        <div class="info-card">
+                            <h3 id="title"></h3>
+                            <p id="desc">
+                            <p>
+                            <p id="techs"> </p>
+                            <div class="container-buttons">
+                                <a href="" target="_blank" id="site"> <button class="btn"><i class="bi bi-link"></i>Ver
+                                        projeto</button></a>
+                                <a href="" target="_blank" id="repositorio">
+                                    <button class="btn"><i class="bi bi-link"></i>Ver código</button></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="team">
@@ -195,7 +222,7 @@
     </div>
 
 
-    <script src="./js/script.js"></script>
+
     <!-- <script src="./js/carroussel-team.js"></script> -->
 </body>
 

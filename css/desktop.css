@@ -1,4 +1,4 @@
-@media screen and (min-width:680px) {
+@media screen and (min-width:780px) {
     .sections_title {
         font-size: 2.3rem;
         text-align: center;
@@ -6,40 +6,37 @@
     }
 
     /* HEADER */
-    .nav {
-        padding: 0 1.9rem;
-        max-width: 1240px;
+    
+    #menu_hamburguer{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        visibility: visible;
+        position: relative;
+        gap: 1rem;
+        right: 1rem;
+        top: 0;
+        height: 3rem;
+        background: none;
+        transition: 0;
     }
 
     .menu #li {
         padding-top: 0px;
     }
 
-    ul {
-        display: flex;
-        align-items: center;
-
-    }
-
-    .menu {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 30px;
-        visibility: visible;
-        overflow-y: visible;
-        margin-top: -35px;
-        padding: 0 2rem;
-    }
-
     .menu a {
-        font-size: 1.2rem;
-        color: rgb(240, 235, 235);
+        font-size: 1.3rem;
     }
 
-    #menu_hamburguer {
-        display: none;
+    .menu a:hover {
+        color: #29272d;
     }
+
 
     /* Banner */
     #banner {
@@ -85,6 +82,8 @@
         padding: 1rem;
         margin: auto;
     }
+
+    
 
 
     /* plans */
@@ -134,6 +133,43 @@
     #specialties .card:hover {
         transform: scale(1.1);
     }
+
+    .modal-body {
+        min-height: 50vh;
+        border-top: 1px solid gray;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-card {
+        height: 24rem;
+        width: 50%;
+        padding: .5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: space-between;
+    }
+
+    #title {
+        font-size: 1.6rem;
+    }
+
+    .img-container {
+        height: 24rem;
+        width: 60rem;
+        margin: auto;
+    }
+
+    #modal .container-buttons {
+        display: flex;
+        justify-content: left;
+        gap: 1rem;
+        margin-top: 2rem;
+        padding: 0rem;
+        align-items: center;
+    }
+
 
     /* TEAM */
 
