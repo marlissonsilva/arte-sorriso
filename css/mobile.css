@@ -211,7 +211,7 @@ img {
 
 #about {
     padding: 2rem 1.5rem;
-    background-color: rgba(211, 210, 210, 0.308);
+    background-color: rgb(220, 250, 250);
     font-size: 1.2rem;
 }
 
@@ -268,18 +268,19 @@ img {
 
 #modal {
     background-color:white;
-    max-height: 90%;
-    width: 900px;
+    max-height: 85%;
+    height: auto;
+    width: 800px;
     max-width: 90%;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 1rem;
+    border-radius: .5rem;
     padding: 1.2rem;
     /* display: none; */
     z-index: 10;
-
+    overflow-x:auto;
 }
 
 #fade, #modal {
@@ -337,7 +338,7 @@ img {
 
 .img-container {
     height: 12rem;
-    max-width: 400px;
+    width: 100%;
     margin: auto;
 }
 
@@ -351,13 +352,37 @@ img {
 
 .info-card {
     width: 100%;
-
+    padding: .5rem;
 }
 
+#desc{
+    font-size: 1.1rem;
+}
 #title {
     font-size: 1.3rem;
     text-transform: capitalize;
 }
+.container-buttons{
+    margin-top: 1rem;
+}
+
+.container-buttons button{
+  padding: .5rem;
+  background-color: #4fa3ec;
+  border: none;
+  border-radius: .3rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.container-buttons button:hover{
+    background-color: #0677db;
+    transition: .5s;
+    color: white;
+  }
+
+
 
 
 /* TEAM */
