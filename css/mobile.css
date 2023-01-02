@@ -15,14 +15,9 @@
     text-decoration: none;
 }
 
-html {
-    width: 100vw;
+html{
+    height: 100vh;
     overflow-x: hidden;
-    margin: auto;
-}
-
-body {
-    width: 100vw;
 }
 
 img {
@@ -38,7 +33,7 @@ img {
 /* ##animation scroll## */
 [data-anime] {
     opacity: 0;
-    transition: .4s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 [data-anime="left"] {
@@ -58,7 +53,8 @@ img {
 }
 
 [data-anime="show"] {
-    transform: translate3d(0, 0px, 0);
+    transform: scale(.70);
+    transition: .9s;
 }
 
 [data-anime].animate {
@@ -170,6 +166,10 @@ img {
     border-radius: 7px;
 }
 
+#name_logo{
+    display: none;
+}
+
 /*   ######## BANNER ########  */
 .bg_dark {
     background-color: black;
@@ -196,10 +196,11 @@ img {
     padding: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.9);
     background: rgba(211, 210, 210, 0.308);
-    color: rgb(8, 3, 3);
+    color: rgb(61, 60, 60);
     box-shadow: 0 4px 30px rgba(150, 149, 149, 0.2);
     z-index: 1;
     font-size: 1.4rem;
+    text-align: center;
 }
 
 .intro_banner h2 {
@@ -213,6 +214,11 @@ img {
     padding: 2rem 1.5rem;
     background-color: rgb(220, 250, 250);
     font-size: 1.2rem;
+}
+
+#about p{
+    padding:.3rem 0;
+    line-height: 1.6rem;
 }
 
 .plans {
@@ -232,7 +238,6 @@ img {
 /* specialties */
 
 #specialties {
-    /* background-color: rgb(202, 198, 198); */
     padding: 2rem 0;
 }
 
@@ -244,6 +249,13 @@ img {
     width: 90%;
     margin: auto;
     margin-bottom: 1rem;
+    cursor: pointer;
+}
+.card img{
+    border-radius:.5rem .5rem 0 0;
+}
+.title_card{
+    text-transform: capitalize;
 }
 
 .card_subtitle {
@@ -252,6 +264,7 @@ img {
     margin-top: -5px;
     text-align: center;
     color: white;
+    border-radius: 0 0 .5rem .5rem;
 }
 
 /* ####### MODAL ############# */
@@ -382,9 +395,6 @@ img {
     color: white;
   }
 
-
-
-
 /* TEAM */
 #team {
     width: 100%;
@@ -398,12 +408,16 @@ img {
     width: 90%;
     margin: auto;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .employee {
     background-color: rgba(217, 211, 211, 0.814);
-    margin-bottom: 2rem;
     text-align: center;
+    width:80%;
+    margin: auto;
 }
 
 .employee-name,
@@ -415,11 +429,55 @@ img {
 .employee-name {
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: red;
+    color: rgb(227, 212, 212);
+}
+.employee img {
+    width: 100%;
+    height:10rem;
+    object-fit: cover;
+
 }
 
 .employee-role {
     font-size: 1.2rem;
+}
+
+.comments{
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.comment{
+    background-color: rgb(224, 220, 220);
+    min-height:15rem;
+    padding: 1rem;
+    border-radius: .5rem;
+  
+}
+#avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#avatar img{
+    width: 100%;
+}
+
+.body{
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.footer{
+    padding: .5rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
 }
 
 

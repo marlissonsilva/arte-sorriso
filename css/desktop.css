@@ -1,13 +1,11 @@
-@media screen and (min-width:780px) {
+@media screen and (min-width:768px) {
     .sections_title {
         font-size: 2.3rem;
-        text-align: center;
-        padding: 2rem;
     }
 
     /* HEADER */
-    
-    #menu_hamburguer{
+
+    #menu_hamburguer {
         display: none;
     }
 
@@ -39,6 +37,10 @@
         transition: .5s ease-in-out;
     }
 
+    #name_logo {
+        display: flex;
+    }
+
 
     /* Banner */
     #banner {
@@ -47,59 +49,27 @@
     }
 
     .intro_banner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: 50%;
         max-width: 50%;
         min-width: 40rem;
         padding: 2.5rem;
-        border: 1px solid rgba(255, 255, 255, 0.9);
-        background: rgba(211, 210, 210, 0.308);
-        color: rgb(8, 3, 3);
-        box-shadow: 0 4px 30px rgba(150, 149, 149, 0.2);
-        z-index: 1;
-        font-size: 1.4rem;
-
-
-    }
-
-    .intro_banner h2 {
-        padding: 1.8rem 0;
-        font-size: 2.7rem;
     }
 
     /* ABOUT */
-
-    #about {
-        padding: 2rem 1.5rem;
-        font-size: 1.2rem;
-      
-    }
-
     #about>.container {
-        max-width: 50rem;
-        /* background-color: green; */
+        max-width: 60rem;
         padding: 1rem;
         margin: auto;
     }
 
-    
+
 
 
     /* plans */
-    .plans {
-        display: flex;
-        justify-content: center;
-        padding-top: 2rem;
-        gap: 1rem;
-    }
 
     .plans img {
         width: 5rem;
         max-width: 15rem;
-        height: 3rem;
         object-fit: cover;
 
     }
@@ -137,71 +107,28 @@
     }
 
     #modal {
-        background-color:white;
         max-height: 95%;
-     
-
     }
-    
-/* 
-    .modal-body {
-        min-height: 50vh;
-        border-top: 1px solid gray;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .info-card {
-        height: 24rem;
-        width: 50%;
-        padding: .5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: space-between;
-    }
-
-    #title {
-        font-size: 1.6rem;
-    }
-
-    .img-container {
-        height: 24rem;
-        width: 60rem;
-        margin: auto;
-    }
-
-    #modal .container-buttons {
-        display: flex;
-        justify-content: left;
-        gap: 1rem;
-        margin-top: 2rem;
-        padding: 0rem;
-        align-items: center;
-    } */
-
 
     /* TEAM */
 
     #team-container {
         max-width: 800px;
-        display: flex;
-        gap: 2rem;
+        flex-direction: row;
 
     }
 
     .employee {
         width: 33.33%;
-        text-align: center;
         max-width: 350px;
-        margin: auto;
         height: 20rem;
+        padding: .3rem;
     }
 
     .employee img {
-        /* width: 100%; */
+        width: 13rem;
         height: 13rem;
-        object-fit: cover;
+        object-fit: fill;
 
     }
 
@@ -212,28 +139,21 @@
 
     .employee-name,
     .employee-role {
-        text-align: center;
-       padding: .5rem;
+        padding: .5rem;
     }
-
 
     .employee-name {
         font-size: 1.5rem;
-        text-transform: uppercase;
-        color: red;
+
     }
 
-    .employee-role {
-        font-size: 1.2rem;
+    .comments {
+        grid-template-columns: repeat(2, 50%);
+        padding: 1.5rem;
     }
-
-
 
     .contact-box iframe {
         width: 65vw;
-        margin-bottom: 30px;
-        margin-top: -25px;
-
     }
 
 }

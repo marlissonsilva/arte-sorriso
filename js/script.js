@@ -79,7 +79,7 @@ animeScroll() // garantir que a funçao seja executada logo ao entrar na página
 if (target.length) { // verificar se tem itens dentro do target
       window.addEventListener('scroll', debounce(function () {
             animeScroll()
-      }, 30));
+      }, 20));
 
 }
 
@@ -111,21 +111,5 @@ if (target.length) { // verificar se tem itens dentro do target
 //       this.querySelector('input[name=Body]').setAttribute('value', texto);
 //   });
 
-
-// card team
-
-// const cardsTeam = document.querySelectorAll('.card_team')
-// cardsTeam.forEach(element => {
-//       element.addEventListener('click' , showDesc)
-//       console.log(element)
-// });
-
-// function showDesc() {
-//       const description = document.querySelectorAll('.team_description')
-//       description.forEach(element => {
-//              tjelement.style.display = 'block'
-//       });
-     
-// }
 
 
