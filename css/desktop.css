@@ -1,11 +1,18 @@
-@media screen and (min-width:768px) {
-    .sections_title {
-        font-size: 2.3rem;
+@media screen and (min-width:767px) {
+    #logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        width: 30rem;
     }
 
-    /* HEADER */
+    #text-logo {
+        display: flex;
+        color: #B58037 ;
+        font-size: 1.6rem;
+    }
 
-    #menu_hamburguer {
+    #btn-mobile {
         display: none;
     }
 
@@ -28,54 +35,22 @@
     }
 
     .menu a {
-        font-size: 1.2rem;
-        transition: .5s ease-in-out;
+        font-size: 1.3rem;
     }
 
     .menu a:hover {
-        color: #29272d;
-        transition: .5s ease-in-out;
+        color:var(--color-2);
     }
 
-    #name_logo {
-        display: flex;
-    }
-
-
-    /* Banner */
-    #banner {
-        height: 95vh;
-        max-height: 800px;
-    }
-
+    /* ############# */
     .intro_banner {
         width: 50%;
         max-width: 50%;
         min-width: 40rem;
         padding: 2.5rem;
     }
-
-    /* ABOUT */
-    #about>.container {
-        max-width: 60rem;
-        padding: 1rem;
-        margin: auto;
-    }
-
-
-
-
-    /* plans */
-
-    .plans img {
-        width: 5rem;
-        max-width: 15rem;
-        object-fit: cover;
-
-    }
-
-    /* specialties */
-    .container {
+    /* ---------------------------------------------- */
+    .cards{
         padding: 2rem 1.5rem;
         max-width: 1200px;
         margin: auto;
@@ -106,29 +81,28 @@
         transform: scale(1.1);
     }
 
-    #modal {
-        max-height: 95%;
-    }
 
     /* TEAM */
 
     #team-container {
-        max-width: 800px;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(10rem, 30rem));
+        max-width: 900px;
+        justify-content: center;
+        margin: auto;
 
     }
 
     .employee {
-        width: 33.33%;
+        /* width: 30%; */
         max-width: 350px;
-        height: 20rem;
-        padding: .3rem;
+        height: auto;
+        padding: .5rem;
     }
 
     .employee img {
-        width: 13rem;
-        height: 13rem;
-        object-fit: fill;
+        min-height: 10rem;
+
 
     }
 
@@ -148,12 +122,55 @@
     }
 
     .comments {
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(2, 45%);
         padding: 1.5rem;
     }
 
     .contact-box iframe {
-        width: 65vw;
+        width: 15vw;
+        margin-top: 10px;
     }
 
+    .contacts{
+        display: flex;
+        justify-content:space-evenly;
+        gap: 2rem;
+
+    }
+
+    .range {
+        font-size: 2rem;
+        padding:1rem 3rem ;
+    }
+    
+    .range .fa-brands {
+        font-size: 2rem;
+    }
+
+    #text-whats {
+        background: linear-gradient(to bottom right, #018632 30%, #43ee82 100%);
+        border-radius: 2rem 6rem ;
+        color: white;
+        font-weight: 600;
+        padding: .8rem;
+        font-size: 18px;
+        display: block;
+    }
+
+}
+
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(5rem, 1fr));
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .cards {
+        max-width: 1300px;
+        margin: auto;
+        grid-template-columns: repeat(3, minmax(5rem, 1fr));
+    }
 }
