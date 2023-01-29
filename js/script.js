@@ -54,13 +54,13 @@ function hover(event) {
     if (event.type === 'mouseenter');
     const textWhats = document.getElementById('text-whats');
     textWhats.style.visibility = 'visible';
-    textWhats.style.transition = '.6s';
+    textWhats.style.transition = '.5s ease';
 }
 function removeHover(event) {
     if (event.type === 'mousedown');
     const textWhats = document.getElementById('text-whats');
     textWhats.style.visibility = 'hidden';
-    textWhats.style.transition = '.3s';
+    // textWhats.style.transition = '.5s';
 
 }
 

@@ -149,12 +149,15 @@
 
     #text-whats {
         background: linear-gradient(to bottom right, #018632 30%, #43ee82 100%);
-        border-radius: 2rem 6rem ;
+        border-radius: 2rem 0 0 2rem;
         color: white;
-        font-weight: 600;
-        padding: .8rem;
-        font-size: 18px;
+        font-weight: 400;
+        padding:.5rem 1rem ;
+        font-size: 16px;
         display: block;
+        margin-right: -2.5rem;
+        width: 14rem;
+        
     }
 
 }
